@@ -1,0 +1,6 @@
+{
+  "name": "Choudhary Dairy Farm",
+  "description": "Fresh milk and quality dairy products from Choudhary Dairy Farm in Old Gardhi Mendu, Delhi. Offering fresh cow milk, buffalo milk, curd, butter, ghee, and cream with hygienic animal care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

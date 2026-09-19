@@ -1,0 +1,225 @@
+import { ProductItem, AnimalCardItem, FeedFodderItem, InfrastructureItem } from '../types';
+
+export const FARM_INFO = {
+  name: 'Choudhary Dairy Farm',
+  tagline: 'Pure & Fresh Dairy From Our Farm to Your Family',
+  location: 'Old Gardhi Mendu, Delhi, India',
+  city: 'Delhi',
+  state: 'Delhi',
+  phone: '8860222844',
+  formattedPhone: '+91 88602 22844',
+  email: 'choudharydairyfarmdelhi@gmail.com',
+  openingHours: '5:00 AM – 7:00 PM',
+  openingSchedule: 'Open Daily (Monday – Sunday)',
+  milkingSlots: {
+    morning: '5:00 AM – 8:30 AM',
+    evening: '4:00 PM – 7:00 PM',
+  },
+  established: 'Established Local Dairy',
+  coordinates: {
+    lat: 28.6913,
+    lng: 77.2625,
+  },
+};
+
+export const HERO_HIGHLIGHTS = [
+  { id: 'h1', title: 'Fresh Milk', desc: 'Direct daily farm milking', icon: 'Milk' },
+  { id: 'h2', title: 'Hygienic Animal Care', desc: 'Sanitized sheds & vet checks', icon: 'HeartPulse' },
+  { id: 'h3', title: 'Nutritious Feed', desc: 'Green fodder & balanced grain', icon: 'Wheat' },
+  { id: 'h4', title: 'Quality Dairy Products', desc: '100% pure, natural goodness', icon: 'Sparkles' },
+];
+
+export const PRODUCTS: ProductItem[] = [
+  {
+    id: 'fresh-milk',
+    name: 'Fresh Milk',
+    description: 'Fresh dairy milk suitable for daily consumption.',
+    tag: 'Daily Essential',
+    image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=800&q=80',
+    highlights: ['Pure farm fresh', 'Daily morning & evening batches', 'Zero adulteration', 'Naturally nutritious'],
+    unitHint: 'Available in daily subscription & bottles',
+  },
+  {
+    id: 'cow-milk',
+    name: 'Cow Milk',
+    description: 'Fresh cow milk produced with proper animal care and nutrition.',
+    tag: 'Light & Wholesome',
+    image: 'https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=800&q=80',
+    highlights: ['Easily digestible', 'Rich in natural vitamins & calcium', 'Carefully handled', 'Gentle for all ages'],
+    unitHint: 'Farm-bottled fresh daily',
+  },
+  {
+    id: 'buffalo-milk',
+    name: 'Buffalo Milk',
+    description: 'Rich and fresh buffalo milk from healthy, well-maintained animals.',
+    tag: 'Rich & Creamy',
+    image: 'https://images.unsplash.com/photo-1528750997573-59b89d56f4f7?auto=format&fit=crop&w=800&q=80',
+    highlights: ['High fat & protein content', 'Ideal for tea, sweets & ghee', 'Creamy texture', 'From robust healthy buffaloes'],
+    unitHint: 'Freshly drawn twice a day',
+  },
+  {
+    id: 'curd',
+    name: 'Curd',
+    description: 'Fresh and smooth curd prepared from quality milk.',
+    tag: 'Probiotic Rich',
+    image: 'https://images.unsplash.com/photo-1571212515416-fef01fc43637?auto=format&fit=crop&w=800&q=80',
+    highlights: ['Naturally set with pure cultures', 'Smooth & thick texture', 'Gut-friendly probiotics', 'No starch or gel additives'],
+    unitHint: 'Fresh daily earthen & hygienic packs',
+  },
+  {
+    id: 'butter',
+    name: 'Butter',
+    description: 'Fresh dairy butter with a rich and creamy texture.',
+    tag: 'Artisanal Churned',
+    image: 'https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=800&q=80',
+    highlights: ['Traditional slow churning', 'Irresistible natural aroma', 'Creamy consistency', 'No preservatives or artificial coloring'],
+    unitHint: 'Handcrafted in farm batches',
+  },
+  {
+    id: 'ghee',
+    name: 'Ghee',
+    description: 'Traditional dairy ghee prepared from quality milk products.',
+    tag: 'Pure Golden Elixir',
+    image: 'https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=800&q=80',
+    highlights: ['Slow-simmered traditional recipe', 'Granular (Danedaar) texture', 'Rich nutty aroma', '100% pure milk fat'],
+    unitHint: 'Hygienically sealed glass jars',
+  },
+  {
+    id: 'cream',
+    name: 'Cream',
+    description: 'Fresh and creamy dairy product suitable for various food preparations.',
+    tag: 'Velvety Rich',
+    image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80',
+    highlights: ['Naturally separated cream', 'Thick luscious body', 'Perfect for culinary dishes & desserts', 'Free from thickeners'],
+    unitHint: 'Freshly skimmed daily',
+  },
+];
+
+export const BREEDS_DATA: AnimalCardItem[] = [
+  {
+    id: 'cows',
+    title: 'Healthy Dairy Cows',
+    subtitle: 'Nurtured with gentle care, natural grazing & clean surroundings',
+    image: 'https://images.unsplash.com/photo-1546445317-29f4545e9d53?auto=format&fit=crop&w=900&q=80',
+    description: 'Our dairy cows are raised in airy, open-ventilated shelters with soft rubber bedding and continuous access to fresh running water. We emphasize dignified handling, zero-stress environments, and attentive veterinary monitoring.',
+    features: [
+      'Healthy animals checked by certified veterinary experts',
+      'Proper animal care with daily brushing and warm bedding',
+      'Nutritious feeding of fresh green fodder and balanced mineral mix',
+      'Clean surroundings with sanitized washing twice daily',
+      'Regular health care and proactive immunization monitoring',
+      'Quality milk production with high hygiene standards',
+    ],
+  },
+  {
+    id: 'buffaloes',
+    title: 'Well-Maintained Buffaloes',
+    subtitle: 'Robust, contented animals producing naturally rich milk',
+    image: 'https://images.unsplash.com/photo-1598880940371-c756e015fea1?auto=format&fit=crop&w=900&q=80',
+    description: 'Our buffaloes receive dedicated cooling showers, spacious stalls, and customized fiber-dense feed that supports their natural digestive metabolism, yielding exceptionally rich, full-bodied milk.',
+    features: [
+      'Strong and healthy buffaloes in peaceful open-yard pens',
+      'Specialized care with daily cooling baths & grooming routines',
+      'Nutritious diet high in silage, seasonal greens & protein meals',
+      'Hygienic conditions maintained by scheduled shed flushing',
+      'Careful monitoring of milk yield, comfort & maternal welfare',
+      'Premium high-fat milk rich in natural solids-not-fat (SNF)',
+    ],
+  },
+];
+
+export const FEED_FODDER_ITEMS: FeedFodderItem[] = [
+  {
+    id: 'green-fodder',
+    title: 'Fresh Green Fodder',
+    description: 'Daily harvest of fresh seasonal green fodder including berseem, maize, and hybrid grasses packed with natural moisture, carotene, and vitality.',
+    iconName: 'Sprout',
+    image: 'https://images.unsplash.com/photo-1533038590840-1cde6e668a91?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'nutritious-feed',
+    title: 'Nutritious Feed & Concentrates',
+    description: 'Calculated rations of oil cakes, wheat bran, crushed grains, and essential mineral supplements formulated to support animal stamina and milk nutrition.',
+    iconName: 'Wheat',
+    image: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'balanced-diet',
+    title: 'Balanced Diet Formulations',
+    description: 'Scientifically balanced dry roughage and succulent green forage calibrated according to individual animal age, lactation stage, and body weight.',
+    iconName: 'Scale',
+    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'clean-water',
+    title: 'Clean Drinking Water',
+    description: 'Continuous 24/7 access to fresh, cool, lab-tested potable drinking water troughs, cleaned and refilled multiple times every day.',
+    iconName: 'Droplets',
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'feeding-routine',
+    title: 'Proper Feeding Routine',
+    description: 'Strict, punctual feeding schedules every dawn and dusk preventing metabolic disruption and keeping animal rumination relaxed and consistent.',
+    iconName: 'Clock',
+    image: 'https://images.unsplash.com/photo-1495570689269-dc863701514b?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'milk-support',
+    title: 'Nutrition Supporting Health & Milk',
+    description: 'Wholesome nutrition directly translates into rich taste, natural sweetness, and superior nutritional profiles in our fresh milk and dairy products.',
+    iconName: 'ShieldCheck',
+    image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=800&q=80',
+  },
+];
+
+export const INFRASTRUCTURE_ITEMS: InfrastructureItem[] = [
+  {
+    id: 'sheds',
+    title: 'Clean Animal Sheds',
+    description: 'Well-ventilated, elevated barns designed with non-slip flooring, proper drainage channels, and regular sanitization cycles for livestock comfort.',
+    iconName: 'Home',
+    image: 'https://images.unsplash.com/photo-1516467508483-a7212febe31a?auto=format&fit=crop&w=800&q=80',
+    badge: 'Spacious & Airy',
+  },
+  {
+    id: 'milking-area',
+    title: 'Hygienic Milking Area',
+    description: 'Dedicated milking bays washed with warm water and disinfected prior to each session, ensuring milk collection never comes in contact with dust or contaminants.',
+    iconName: 'Sparkles',
+    image: 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80',
+    badge: 'Sterilized Environment',
+  },
+  {
+    id: 'feeding-area',
+    title: 'Proper Feeding Area',
+    description: 'Smooth, cement feeding mangers that prevent feed accumulation or souring, allowing cattle to consume fresh forage comfortably and cleanly.',
+    iconName: 'Utensils',
+    image: 'https://images.unsplash.com/photo-1495570689269-dc863701514b?auto=format&fit=crop&w=800&q=80',
+    badge: 'Organized Mangers',
+  },
+  {
+    id: 'drinking-water',
+    title: 'Clean Drinking Water',
+    description: 'Automatic, overflow-protected potable water troughs providing unrestricted hydration essential for healthy lactation and thermoregulation.',
+    iconName: 'Droplets',
+    image: 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?auto=format&fit=crop&w=800&q=80',
+    badge: '24/7 Potable Water',
+  },
+  {
+    id: 'animal-care',
+    title: 'Animal Care & Hygiene',
+    description: 'Comprehensive health monitoring protocol including regular grooming, hoof care, seasonal vaccination regimes, and immediate quarantine protocols.',
+    iconName: 'HeartPulse',
+    image: 'https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&w=800&q=80',
+    badge: 'Veterinary Guided',
+  },
+  {
+    id: 'milk-storage',
+    title: 'Milk Storage & Handling',
+    description: 'Food-grade stainless steel cans, chilled filtration setups, and swift delivery protocols preserving natural sweetness and preventing bacterial growth.',
+    iconName: 'ThermometerSnowflake',
+    image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=800&q=80',
+    badge: 'Rapid Cold Chain',
+  },
+];
